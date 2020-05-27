@@ -7,7 +7,7 @@ def validate_user(username, minlen):
     punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
     punctuations = list(punctuations)
 
-    """Checks if the received username matches the required conditions."""
+    """Checks if the received username matches all the required conditions."""
     if type(username) != str:
         raise TypeError("username must be a string")
     if minlen < 1:
